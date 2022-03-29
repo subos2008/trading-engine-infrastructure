@@ -1,0 +1,19 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: bitnami-redis
+  namespace: persistent-state
+spec:
+  chart:
+    spec:
+      chart: redis
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami
+  interval: 1d
+  releaseName: bitnami-redis
+  values:
+    metrics:
+      enabled: true
+
