@@ -17,4 +17,7 @@ spec:
   values:
     metrics:
       enabled: true
+    auth:
+      existingSecret: redis-auth
+      existingSecretPasswordKey: password
 
