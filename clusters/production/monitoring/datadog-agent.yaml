@@ -1,0 +1,35 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: datadog-agent
+  namespace: default
+spec:
+  chart:
+    spec:
+      chart: datadog
+      sourceRef:
+        kind: HelmRepository
+        name: datadog
+        namespace: flux-system
+  interval: 1h
+  releaseName: datadog-agent
+  values:
+    datadog:
+      apiKey: 4d8afdb4fdf50af62df4bb3e94242a44
+      containerCollectAll: false
+      kubeStateMetricsEnabled: true
+      clusterAgent:
+        replicas: 2
+        createPodDisruptionBudget: true
+        admissionController:
+          enabled: true
+          mutateUnlabelled: true
+      dogstatsd:
+        useSocketVolume: true
+        useHostPort: true
+        nonLocalTraffic: true
+        
+
+
+
