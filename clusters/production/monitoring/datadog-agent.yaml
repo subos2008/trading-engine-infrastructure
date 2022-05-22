@@ -15,6 +15,7 @@ spec:
   interval: 1h
   releaseName: datadog-agent-via-flux
   values:
+    targetSystem: "linux"
     datadog:
       apiKey: 4d8afdb4fdf50af62df4bb3e94242a44
       containerCollectAll: false
