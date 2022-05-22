@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: datadog
+      chart: datadog/datadog
       sourceRef:
         kind: HelmRepository
         name: datadog
@@ -29,7 +29,7 @@ spec:
         useSocketVolume: true
         useHostPort: true
         nonLocalTraffic: true
-        
+
         
 
 
