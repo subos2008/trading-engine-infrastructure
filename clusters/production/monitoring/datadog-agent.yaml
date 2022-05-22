@@ -19,6 +19,9 @@ spec:
       apiKey: 4d8afdb4fdf50af62df4bb3e94242a44
       containerCollectAll: false
       kubeStateMetricsEnabled: true
+      logs:
+        enabled: true
+        autoMultiLineDetection: true
       clusterAgent:
         replicas: 2
         createPodDisruptionBudget: true
