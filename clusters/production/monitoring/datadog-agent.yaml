@@ -25,6 +25,7 @@ spec:
         autoMultiLineDetection: true
       apm:
         enabled: true
+        portEnabled: true
       clusterAgent:
         replicas: 2
         createPodDisruptionBudget: true
