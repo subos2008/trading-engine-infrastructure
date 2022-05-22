@@ -32,6 +32,13 @@ spec:
         useSocketVolume: true
         useHostPort: true
         nonLocalTraffic: true
+      confd:
+        redisdb.yaml: |-
+          init_config:
+          instances:
+            - host: "bitnami-redis-master.persistent-state.svc.cluster.local"
+              port: "6379"
+              password: "iU4jrjAFHd4T"
         
         
 
