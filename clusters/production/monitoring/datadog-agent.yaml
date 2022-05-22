@@ -13,7 +13,7 @@ spec:
         name: datadog
         namespace: flux-system
   interval: 1h
-  releaseName: datadog-agent
+  releaseName: datadog-agent-via-flux
   values:
     datadog:
       apiKey: 4d8afdb4fdf50af62df4bb3e94242a44
