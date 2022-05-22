@@ -23,6 +23,8 @@ spec:
       logs:
         enabled: true
         autoMultiLineDetection: true
+      apm:
+        enabled: true
       clusterAgent:
         replicas: 2
         createPodDisruptionBudget: true
