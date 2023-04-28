@@ -42,6 +42,17 @@ spec:
             - host: bitnami-redis-master.persistent-state.svc.cluster.local
               port: 6379
               password: iU4jrjAFHd4T
+      env:
+       ## collect only logs:
+       ##   https://docs.datadoghq.com/logs/guide/how-to-set-up-only-logs/?tab=kubernetes
+        - name: DD_ENABLE_PAYLOADS_EVENTS
+          value: "false"
+        - name: DD_ENABLE_PAYLOADS_SERIES
+          value: "false"
+        - name: DD_ENABLE_PAYLOADS_SERVICE_CHECKS
+          value: "false"
+        - name: DD_ENABLE_PAYLOADS_SKETCHES
+          value: "false"
     apm_config:
       ## @param ignore_resources - list of strings - optional
       ## A list of regular expressions can be provided to exclude certain traces based on their resource name.
