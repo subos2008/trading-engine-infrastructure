@@ -23,7 +23,7 @@ spec:
         enabled: true
         autoMultiLineDetection: true
       apm:
-        enabled: true
+        enabled: false
         portEnabled: true
       clusterAgent:
         replicas: 2
