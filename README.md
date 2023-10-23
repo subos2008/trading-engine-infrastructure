@@ -1,5 +1,12 @@
 # trading-engine-infrastructure
 
+# IN PROCESS OF DEPRICATION
+
+This repo is for the k8 version of the trading engine deployment. 
+
+However, I'm in the process of porting it (day 1) to ecs/serverless AWS
+See: https://github.com/subos2008/trading-engine-infrastructure-v2-aws
+
 See:
 1. https://fluxcd.io/docs/get-started/
 2. https://fluxcd.io/docs/guides/repository-structure/
