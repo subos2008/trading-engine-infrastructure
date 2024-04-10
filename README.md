@@ -2,7 +2,7 @@
 
 # IN PROCESS OF DEPRICATION
 
-This repo is for the k8 version of the trading engine deployment. 
+This repo is for the k8 version of the trading engine deployment.  It adds Redis and Datadog's agent to a Kubernetes cluster using Flux.
 
 However, I'm in the process of porting it (day 1) to ecs/serverless AWS
 See: https://github.com/subos2008/trading-engine-infrastructure-v2-aws
